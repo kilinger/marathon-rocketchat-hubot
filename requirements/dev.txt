@@ -1,0 +1,23 @@
+# This file pulls in everything a developer needs. If it's a basic package
+# needed to run the site, it belongs in requirements/prod.txt. If it's a
+# package for developers (testing, docs, etc.), it goes in this file.
+-r prod.txt
+
+# Utils
+ipython==4.0.1
+
+# Database backup
+django-dbbackup==2.3.2
+
+# Extensions
+django-extensions==1.6.1
+
+# Documentation
+Sphinx==1.3.3
+
+# debug toolbar
+# django-debug-toolbar==1.4
+# django-debug-toolbar-template-timings==0.6.4
+# There are useful panels for debug-toolbar, but have not quite been updated yet for 1.4
+# -e git://github.com/playfire/django-debug-toolbar-user-panel#egg=django_debug_toolbar_user_panel-dev
+#- e git://github.com/ross/memcache-debug-panel#egg=memcache_toolbar-dev

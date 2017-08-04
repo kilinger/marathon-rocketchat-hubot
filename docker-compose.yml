@@ -1,0 +1,21 @@
+web:
+  restart: always
+  build: .
+  dockerfile: Dockerfile.dev
+  ports:
+    - "5000:5000"
+  links:
+    - postgres:postgres
+  volumes:
+    - .:/app
+  environment:
+    - DJANGO_SETTINGS_MODULE=hubot.settings.dev
+    - DATABASE_URL=postgresql://postgres:@postgres:5432/hubot
+
+postgres:
+  image: index.xxxxx.com/postgres:9.4
+  ports:
+    - "5432:5432"
+  environment:
+    - EXTENSIONS=hstore
+    - DATABASES=hubot

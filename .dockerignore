@@ -1,0 +1,7 @@
+.git/
+.tox/
+.env
+backups/
+site-static/
+media/
+celerybeat-schedule

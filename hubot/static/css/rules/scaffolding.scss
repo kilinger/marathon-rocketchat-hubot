@@ -1,0 +1,41 @@
+// style for scaffolding
+@import "compass/reset";
+@import "compass/css3/border-radius";
+@import "compass/utilities/general/clearfix";
+@import "variables";
+
+//
+// Scaffolding
+// --------------------------------------------------
+
+
+// Body reset
+// -------------------------
+
+body {
+    margin: 0;
+    font-family: $baseFontFamily;
+    font-size: $baseFontSize;
+    line-height: $baseLineHeight;
+    color: $textColorGray;
+    background-color: $bodyBackground;
+}
+
+
+//loyout 
+//--------------------------
+
+
+
+// Links
+// -------------------------
+
+a {
+    color: $linkColor;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $linkColorHover;
+    text-decoration: none;
+}

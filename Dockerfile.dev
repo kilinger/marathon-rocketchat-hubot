@@ -1,0 +1,9 @@
+FROM index.xxxxx.com/python:2
+
+COPY ./requirements /app/requirements
+
+WORKDIR /app
+
+RUN pip install -r requirements/dev.txt --index-url http://pypi.xxxxx.com/prod/pypi/+simple/ --trusted-host pypi.xxxxx.com
+
+CMD ["python", "manage.py", "runserver_plus", "0.0.0.0:5000"]

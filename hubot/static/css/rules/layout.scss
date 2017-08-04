@@ -1,0 +1,51 @@
+// style for layout
+@import "variables";
+@import "compass/utilities/general/clearfix";
+@import "header";
+@import "mini_profile";
+@import "recommend";
+
+#page {
+	width:100%;
+	background:url("../images/bg.jpg") left top repeat-x;
+}
+
+
+#header,
+#content{
+		width:$bodyWidth;
+		margin:0 auto;
+		clear:both;
+}
+
+
+
+#header {
+	height:125px;
+	position: relative;
+}
+
+
+#sidebar{
+	float:left;
+	padding-top: $basePadding;
+	padding-right: $basePadding;
+	border-right: 1px solid $borderColor;
+	width:274px;
+}
+
+#main{
+	float:left;
+	width: $mainWidth - $basePadding;
+	padding-left: $basePadding;
+	padding-top: 65px;
+}
+
+#footer {
+	height:85px;
+	width:100%;
+	@include clearfix;
+}
+
+
+

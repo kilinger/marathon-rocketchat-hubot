@@ -1,0 +1,61 @@
+# Install everything that needs to be compiled
+-r compiled.txt
+
+# Django stuff
+Django>=1.8,<1.9
+
+# Templates
+Markdown==2.6.5
+
+# Logging
+raven==5.19.0
+
+# Celery: Message queue
+celery==3.1.23
+celery_once==0.1.4
+
+
+django-model-utils==2.3.1
+
+# Caching
+python-memcached==1.57
+
+# Configurations
+django-environ==0.4.1
+
+marathon==0.8.1
+
+# Subnet
+ipaddress==1.0.15
+
+# API
+djangorestframework==3.3.2
+drf-extensions==0.2.8
+djangorestframework-filters==0.6.0
+
+# Redis
+django-redis==4.3.0
+
+
+# argument parser
+docopt==0.6.2
+
+
+tabulate==0.7.5
+
+
+django-safedelete==0.3.2
+
+
+python-cinderclient==1.6.0
+
+
+sseclient==0.0.11
+
+
+static3==0.6.1.1
+dj-static==0.0.6
+
+
+# validate for docopt
+schema==0.4.0

@@ -1,0 +1,31 @@
+build:
+  image: index.xxxxx.com/library/python:2
+  environment:
+    - PIP_ARGS=--index-url http://pypi.xxxxx.com/prod/pypi/+simple/ --trusted-host pypi.xxxxx.com
+  commands:
+    - pip install -U tox ${PIP_ARGS}
+    - pip install virtualenv==12.1.1 ${PIP_ARGS}
+    - tox
+
+compose:
+  database:
+    image: index.xxxxx.com/postgres:9.4
+    environment:
+      - EXTENSIONS=hstore
+      - DATABASES=hubot
+
+  redis:
+    image: index.xxxxx.com/library/redis:2.8
+
+deploy:
+  xxxxx:
+    image: index.xxxxx.com/plugins/drone-xxxxx
+    url: https://dashboard.xxxxx.com
+    username: xxxxx
+    password: $$xxxxx_PASS
+    project: dashboard
+    tag: $${COMMIT:8}
+    when:
+      branch:
+        - develop
+        - master

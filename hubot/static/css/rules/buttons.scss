@@ -1,0 +1,32 @@
+// style for buttons
+@import "variables";
+
+.btn-primary, .btn {
+    padding:  0 12px;
+    height: $btnHeight;
+    line-height: $btnHeight;
+
+    @include border-radius(3px);
+    cursor: pointer;
+}
+
+.btn-primary {
+    border: 1px solid #3F4B3F;
+    background-color: $mainColor;
+    color: white;
+    a {
+        color: white;
+    }
+}
+
+.btn {
+    background-color: $btnColor;
+    border: 1px solid #CCCCCC;
+    color: #666666;
+}
+
+input.btn-primary, input.btn {
+    height: auto;
+    width: auto;
+    line-height:auto;
+}

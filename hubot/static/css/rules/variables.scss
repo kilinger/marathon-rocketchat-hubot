@@ -1,0 +1,63 @@
+// Scaffolding
+// -------------------------
+$bodyBackground:        white;
+$bodyWidth:		980px;
+$textColorBlue:         #65b4c6;
+$textColorGray:         #999;
+
+$gray:			#999;
+
+
+
+//layout
+$baseColor:		$textColorBlue;
+$mainWidth:		695px;
+$borderColor:		$textColorBlue;
+$borderColor2:		$gray;
+$basePadding:		10px;
+$baseMargin:		10px;
+
+// Links
+// -------------------------
+$linkColor:             $textColorBlue;
+$linkColorHover:        $linkColor;
+
+
+//color
+// ------------------
+
+
+// Typography
+// -------------------------
+$sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+$monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
+
+
+$titleFontSize: 	16px;
+$titleSmallFontSize:	14px;
+$baseFontSize:          14px;
+$baseFontFamily:        "\5FAE\8F6F\96C5\9ED1" ,$sansFontFamily;
+$baseLineHeight:        20px;
+$altFontFamily:         $serifFontFamily;
+
+$headingsFontFamily:    inherit; // empty to use BS default, $baseFontFamily
+$headingsFontWeight:    bold;    // instead of browser default, bold
+$headingsColor:         inherit; // empty to use BS default, $textColor
+
+
+// Pagination
+// -------------------------
+$paginationBackground:                #fff;
+$paginationBorder:                    #ddd;
+$paginationActiveBackground:          #f5f5f5;
+
+
+
+//btn
+$btnColor:   #F1EEE8;
+$btnPadding: 7px 20px;
+
+
+
+
